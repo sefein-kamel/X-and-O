@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+  }
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+  }
+
+    /*Header*/
+.header{
+    width: 100%;
+    position: absolute;
+    background-color: #555;
+    color: white;
+    padding: 5px 0px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    top: 0px;
+    left: 0;
+    margin: 0;
+}
+
+.header .x{
+    color: red;
+}
+.header .o{
+    color: blue;
+}
+
+/*The content*/
+  .game {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      width: 80vmin;
+      height: 80vmin;
+      gap: 5px;
+      margin-top: 75px;
+  }
+
+  .cell {
+    background: #fff;
+    border: 2px solid #333;
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .cell.x {
+    color: red;
+    font-size: 125px;
+  }
+
+  .cell.o {
+    color: blue;
+    font-size: 125px;
+  }
+
+  #message {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+
+  /*Footer*/
+.footer{
+    width: 100%;
+    position: absolute;
+    direction: ltr;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px 0px;
+    text-align: center;
+    font-size: 15px;
+    bottom: 0px;
+    left: 0;
+    margin: 0;
+}
+
+.footer span{
+    font-weight: bold;
+    color: black;
+}
